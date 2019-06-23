@@ -44,7 +44,7 @@ class Application
   
    def handle_search_cart(search_term)
     if @@items.include?(search_term)
-      @@cart << search_term
+      @@cart << search_term.to_s
     else
     end
   end
